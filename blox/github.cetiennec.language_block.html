@@ -39,6 +39,12 @@
             align-items: center;
             gap: 40px;
             text-align: center;
+            flex-direction: column; /* Change to column for title above circles */
+        }
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px; /* Space between title and circles */
         }
         .language-block {
             display: flex;
@@ -62,10 +68,14 @@
             height: 100px;
             font-size: 2em;
         }
+        .circle:nth-child(1) { opacity: 1; }    /* First circle */
+        .circle:nth-child(2) { opacity: 0.8; }  /* Second circle */
+        .circle:nth-child(3) { opacity: 0.3; }  /* Third circle */
     </style>
 </head>
 <body>
     <div class="language-container">
+        <div class="title">Langues</div>
         <div class="language-block">
             <div class="name">Français</div>
             <div class="circle">C2</div>
