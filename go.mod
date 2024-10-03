@@ -1,2 +1,2 @@
-module github.com/cetiennec/language_block-2
+module github.com/cetiennec/language_block
 go 1.19
